@@ -12,6 +12,8 @@
 		0A5282891E97B54B00A90DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5282871E97B54B00A90DEB /* Main.storyboard */; };
 		0A52828B1E97B54B00A90DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A52828A1E97B54B00A90DEB /* Assets.xcassets */; };
 		0A52828E1E97B54B00A90DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A52828C1E97B54B00A90DEB /* LaunchScreen.storyboard */; };
+		0A5C33BF1E9BDD04007983EA /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5C33BE1E9BDD04007983EA /* ActionRequestHandler.swift */; };
+		0A5C33C11E9BDD04007983EA /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 0A5C33C01E9BDD04007983EA /* Action.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +24,21 @@
 		0A52828A1E97B54B00A90DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A52828D1E97B54B00A90DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A52828F1E97B54B00A90DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5C33BC1E9BDD04007983EA /* SimpleEnvironment.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleEnvironment.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5C33BE1E9BDD04007983EA /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		0A5C33C01E9BDD04007983EA /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		0A5C33C21E9BDD04007983EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0A52827D1E97B54B00A90DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A5C33B91E9BDD04007983EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5282821E97B54B00A90DEB /* MySwift1 */,
+				0A5C33BD1E9BDD04007983EA /* SimpleEnvironment */,
 				0A5282811E97B54B00A90DEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				0A5282801E97B54B00A90DEB /* MySwift1.app */,
+				0A5C33BC1E9BDD04007983EA /* SimpleEnvironment.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +77,16 @@
 				0A52828F1E97B54B00A90DEB /* Info.plist */,
 			);
 			path = MySwift1;
+			sourceTree = "<group>";
+		};
+		0A5C33BD1E9BDD04007983EA /* SimpleEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				0A5C33BE1E9BDD04007983EA /* ActionRequestHandler.swift */,
+				0A5C33C01E9BDD04007983EA /* Action.js */,
+				0A5C33C21E9BDD04007983EA /* Info.plist */,
+			);
+			path = SimpleEnvironment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +109,23 @@
 			productReference = 0A5282801E97B54B00A90DEB /* MySwift1.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0A5C33BB1E9BDD04007983EA /* SimpleEnvironment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A5C33C51E9BDD04007983EA /* Build configuration list for PBXNativeTarget "SimpleEnvironment" */;
+			buildPhases = (
+				0A5C33B81E9BDD04007983EA /* Sources */,
+				0A5C33B91E9BDD04007983EA /* Frameworks */,
+				0A5C33BA1E9BDD04007983EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleEnvironment;
+			productName = SimpleEnvironment;
+			productReference = 0A5C33BC1E9BDD04007983EA /* SimpleEnvironment.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +137,11 @@
 				ORGANIZATIONNAME = "Oscar Adolfo Recchia";
 				TargetAttributes = {
 					0A52827F1E97B54B00A90DEB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5HKW3X5RG2;
+						ProvisioningStyle = Automatic;
+					};
+					0A5C33BB1E9BDD04007983EA = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 5HKW3X5RG2;
 						ProvisioningStyle = Automatic;
@@ -115,6 +162,7 @@
 			projectRoot = "";
 			targets = (
 				0A52827F1E97B54B00A90DEB /* MySwift1 */,
+				0A5C33BB1E9BDD04007983EA /* SimpleEnvironment */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +178,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A5C33BA1E9BDD04007983EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5C33C11E9BDD04007983EA /* Action.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,6 +195,14 @@
 			files = (
 				0A5282861E97B54B00A90DEB /* ViewController.swift in Sources */,
 				0A5282841E97B54B00A90DEB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A5C33B81E9BDD04007983EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5C33BF1E9BDD04007983EA /* ActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +347,32 @@
 			};
 			name = Release;
 		};
+		0A5C33C31E9BDD04007983EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5HKW3X5RG2;
+				INFOPLIST_FILE = SimpleEnvironment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = oarApp.MySwift1.SimpleEnvironment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0A5C33C41E9BDD04007983EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5HKW3X5RG2;
+				INFOPLIST_FILE = SimpleEnvironment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = oarApp.MySwift1.SimpleEnvironment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -293,7 +383,7 @@
 				0A5282911E97B54B00A90DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0A5282921E97B54B00A90DEB /* Build configuration list for PBXNativeTarget "MySwift1" */ = {
 			isa = XCConfigurationList;
@@ -302,6 +392,16 @@
 				0A5282941E97B54B00A90DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0A5C33C51E9BDD04007983EA /* Build configuration list for PBXNativeTarget "SimpleEnvironment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5C33C31E9BDD04007983EA /* Debug */,
+				0A5C33C41E9BDD04007983EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
