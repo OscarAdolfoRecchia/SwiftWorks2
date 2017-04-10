@@ -22,9 +22,6 @@
 		0A52828A1E97B54B00A90DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A52828D1E97B54B00A90DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A52828F1E97B54B00A90DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A5C33BE1E9BDD04007983EA /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
-		0A5C33C01E9BDD04007983EA /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
-		0A5C33C21E9BDD04007983EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				0A5282821E97B54B00A90DEB /* MySwift1 */,
-				0A5C33BD1E9BDD04007983EA /* SimpleEnvironment */,
 				0A5282811E97B54B00A90DEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,16 +62,6 @@
 				0A52828F1E97B54B00A90DEB /* Info.plist */,
 			);
 			path = MySwift1;
-			sourceTree = "<group>";
-		};
-		0A5C33BD1E9BDD04007983EA /* SimpleEnvironment */ = {
-			isa = PBXGroup;
-			children = (
-				0A5C33BE1E9BDD04007983EA /* ActionRequestHandler.swift */,
-				0A5C33C01E9BDD04007983EA /* Action.js */,
-				0A5C33C21E9BDD04007983EA /* Info.plist */,
-			);
-			path = SimpleEnvironment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
