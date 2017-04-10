@@ -7,11 +7,53 @@
 //
 
 import UIKit
+import  CoreFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+  /*
+    struct Person: Hashable
+    {
+      
+        var age : Int
+    }
+    
+  */
+    
+    
+    //:  begin of Set random picking algorithm
+    
+
+    var begin :  CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+    
+    
+    var users : Set<Person>
+    
+    
+    var end :  CFAbsoluteTime = CFAbsoluteTimeGetCurrent()
+
+    
+    print ( end - begin )
+    
+    
+    
+    
+ //: end of Set random picking algorithm
+    
+    
+    //:  begin of List random picking algorithm
+    
+    
+    
+    var Users : Set<Person>
+    
+    
+    
+    //: end of List random picking algorithm
+    
     
     
     
@@ -52,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print ( "Sono in application")
         
-        myFloat = applyKTimes(f:{ $0 * myFloat /* every kind of processing */ }, x: myFloat, k: myk)
+        myFloat = applyKTimes(f:{ $0 * myFloat /*  k-th power */ }, x: myFloat, k: myk)
 
 print (" Final  myFloat   = \(myFloat)")
         // Override point for customization after application launch.
